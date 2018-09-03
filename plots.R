@@ -79,3 +79,10 @@ dataset2 <- dataset %>%
         subtitle = "Inddelt i Danmark, Vestlige lande og Ikke-Vestlige lande som defineret af DST.",
         caption = "Kilde: Danmarks Statistik (DST), FOLK2 + STRAFNA3"))
 
+# Save plots to disk
+
+
+smpic::smpic_save(gg_count, filename = "overall_count.png", sm = "facebook_shared_images")
+smpic::smpic_save(gg_share, filename = "overall_share.png", sm = "facebook_shared_images")
+smpic::smpic_save(gg_share_within, filename = "overall_share_within.png", sm = "facebook_shared_images")
+smpic::smpic_save(gg_share_within_index, filename = "overall_share_within_index.png", sm = "facebook_shared_images")
